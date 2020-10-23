@@ -1,0 +1,22 @@
+<body>
+  <main>
+    <% if (users.length > 0) { %>
+    <div class="grid">
+      <% for (let user of users) { %>
+      <article class="card product-item">
+        <header class="card__header">
+          <form action="/friends" method="post">
+           <%= user.title %>
+          <button type="submit">Add as A Friend</button>
+          <input type="hidden" name="userId" value="<%= user.id %>"></input>
+          </form>
+         
+        </header>
+      </article>
+      <% } %>
+    </div>
+    <% } else { %>
+    <h1>No User Found!</h1>
+    <% } %>
+  </main>
+</body>

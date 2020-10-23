@@ -1,0 +1,23 @@
+{
+  "name": "nodeuseradd",
+  "version": "1.0.0",
+  "description": "User adding",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon",
+    "start-server": "node app.js"
+  },
+  "author": "Alpaslan Pamuk",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
